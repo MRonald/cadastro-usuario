@@ -1,0 +1,21 @@
+.container-form {
+    border: 2px solid white;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-form .instrucoes {
+    width: 49.5%;
+    border: 1px solid red;
+}
+.container-form .form {
+    width: 49.5%;
+    border: 1px solid red;
+}
+@media (max-width: 800px) {
+    .container-form {
+        width: 95%;
+    }
+}

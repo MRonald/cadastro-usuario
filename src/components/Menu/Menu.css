@@ -1,0 +1,30 @@
+.menu {
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.menu .navegacao .lista-navegacao, .menu .icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.menu .navegacao .lista-navegacao li, .menu .icons li {
+    display: inline-flex;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.circleItem {
+    background-color: black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+@media (max-width: 720px) {
+    .menu .navegacao .lista-navegacao li:nth-child(2), .menu .navegacao .lista-navegacao li:nth-child(3) {
+        display: none;
+    }
+    .menu .icons li:nth-child(1) {
+        display: none;
+    }
+}
