@@ -39,6 +39,7 @@
     background-color: gray;
     display: flex;
     flex-direction: column;
+    transition: all 1s;
 }
 .menu-lateral .icone-fechar {
     background-color: white;

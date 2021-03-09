@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Menu.css';
+import './Menu';
 
 export default () => (
     <div className="menu">
@@ -17,10 +17,10 @@ export default () => (
         </ul>
         <div className="menu-lateral" id="menu-lateral">
             <div className="icone-fechar" id="icone-fechar">X</div>
-            <Link>Login</Link>
-            <Link>Cadastro</Link>
-            <Link to="/dadosbasicos">Dados Básicos</Link>
-            <Link to="/localizacao">Localizacao</Link>
+            <a>Login</a>
+            <a>Cadastro</a>
+            <a href="/dadosbasicos">Dados Básicos</a>
+            <a href="/localizacao">Localizacao</a>
         </div>
     </div>
 );
