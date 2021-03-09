@@ -1,3 +1,4 @@
+import './DadosBasicos.css';
 import React from 'react';
 import FieldsetForm from '../../components/FieldsetForm';
 import InputFormulario from '../../components/InputFormulario';
@@ -9,13 +10,16 @@ export default () => (
         <form>
             <FieldsetForm tituloInstrucao="Foto de perfil" instrucao="Adicione uma foto ao seu perfil">
                 <InputFormulario>
-                    <input type="file" placeholder="Seu arquivo" required/>
+                    <div id="preview"></div>
+                    <label for="foto">Carregar Foto</label>
+                    <input type="file" id="foto" required/>
                 </InputFormulario>
             </FieldsetForm>
             <FieldsetForm tituloInstrucao="Email" instrucao="Você pode alterar seu email">
                 <InputFormulario>
                     <label>Email<span className="required">*</span></label>
                     <input type="email" placeholder="email@exemplo.com" required/>
+                    <Button valueButton="Atualizar Email" type="button" color="rgb(41, 128, 185)" align="left"/>
                 </InputFormulario>
             </FieldsetForm>
             <FieldsetForm tituloInstrucao="Instruções" instrucao="Preencha os seus dados de perfil. Sempre mantenha seu telefone atualizado">
@@ -46,7 +50,7 @@ export default () => (
                     <input type="text" placeholder="https://www.linkedin.com/in/abcdefghi" required/>
                 </InputFormulario>
             </FieldsetForm>
-            <Button valueButton="Enviar"/>
+            <Button valueButton="Enviar" type="submit"/>
         </form>
     </PageDefault>
 );

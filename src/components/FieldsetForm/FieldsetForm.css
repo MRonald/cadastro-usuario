@@ -22,9 +22,8 @@
 .container-fieldset .inputs {
     width: 48.8%;
 }
-.container-fieldset .inputs input, 
-.container-fieldset .instrucoes p,
-.container-fieldset .inputs,
+
+.container-fieldset .inputs:not(input[type="button"]),
 .container-fieldset .instrucoes {
     min-width: 200px;
 }

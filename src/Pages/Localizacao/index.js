@@ -39,7 +39,7 @@ export default () => (
                     <input type="text" placeholder="Insira um complemento se achar necessário"/>
                 </InputFormulario>
             </FieldsetForm>
-            <Button valueButton="Enviar"/>
+            <Button valueButton="Enviar" type="submit"/>
         </form>
     </PageDefault>
 );

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Menu.css';
-import './Menu';
 
 export default () => (
     <div className="menu">
@@ -13,12 +12,14 @@ export default () => (
         </nav>
         <ul className="icons">
             <li className="circleItem"></li>
-            <li className="circleItem" id="icone-usuario"></li>
+            <label for="check">
+                <li className="circleItem" id="icone-usuario"></li>
+            </label>
         </ul>
+        <input type="checkbox" id="check"/>
         <div className="menu-lateral" id="menu-lateral">
-            <div className="icone-fechar" id="icone-fechar">X</div>
-            <a>Login</a>
-            <a>Cadastro</a>
+            <a href="/">Login</a>
+            <a href="/cadastro">Cadastro</a>
             <a href="/dadosbasicos">Dados Básicos</a>
             <a href="/localizacao">Localizacao</a>
         </div>
