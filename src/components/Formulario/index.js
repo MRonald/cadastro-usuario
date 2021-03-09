@@ -2,6 +2,7 @@ import './Formulario.css';
 import React from 'react';
 
 export default (props) => (
+    <>
     <div className="container-form">
         <div className="instrucoes">
             <h2>{props.tituloInstrucao}</h2>
@@ -11,4 +12,8 @@ export default (props) => (
             {props.children}
         </form>
     </div>
+    <div className="container-button">
+        <input type="submit" value={props.nameButton}/>
+    </div>
+    </>
 );

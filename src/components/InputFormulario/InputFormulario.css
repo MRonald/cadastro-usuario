@@ -3,12 +3,16 @@
     flex-direction: column;
 }
 .container-input label {
-    margin: 5% 0px;
+    margin: 2% 0px;
 }
 .container-input input {
     width: 92%;
     font-size: 1rem;
-    padding: 1.3rem 3.4%;
-    border-radius: 10px;
-    border: 2px solid black
+    padding: 0.7rem 3.2%;
+    border-radius: 3px;
+    border: 2px solid rgb(206, 212, 218);
+}
+.container-input .required {
+    color: rgb(201, 59, 89);
+    margin-left: 0.25rem;
 }

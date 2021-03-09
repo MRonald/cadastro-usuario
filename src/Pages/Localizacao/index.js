@@ -1,3 +1,4 @@
+import './Localizacao.css';
 import React from 'react';
 import Formulario from '../../components/Formulario';
 import InputFormulario from '../../components/InputFormulario';
@@ -8,30 +9,30 @@ export default () => (
         <h1>Localização</h1>
         <Formulario tituloInstrucao="Instruções" instrucao="Preencha seus dados de Localização. Sempre os mantenha atualizado.">
             <InputFormulario>
-                <label>CEP</label>
-                <input type="text" placeholder="12345-678"/>
+                <label>CEP<span className="required">*</span></label>
+                <input type="text" placeholder="12345-678" required/>
             </InputFormulario>
             <InputFormulario>
-                <label>Cidade</label>
-                <input type="text" placeholder="Insira o nome da sua cidade atual"/>
+                <label>Cidade<span className="required">*</span></label>
+                <input type="text" placeholder="Insira o nome da sua cidade atual" required/>
             </InputFormulario>
             <InputFormulario>
-                <label>Estado</label>
-                <input type="text" placeholder="Selecione o estado"/>
+                <label>Estado<span className="required">*</span></label>
+                <input type="text" placeholder="Selecione o estado" required/>
             </InputFormulario>
             <InputFormulario>
-                <label>Bairro</label>
-                <input type="text" placeholder="Insira o nome do seu bairro"/>
+                <label>Bairro<span className="required">*</span></label>
+                <input type="text" placeholder="Insira o nome do seu bairro" required/>
             </InputFormulario>
             <InputFormulario>
-                <label>Endereço</label>
-                <input type="text" placeholder="Insira seu endereço"/>
+                <label>Endereço<span className="required">*</span></label>
+                <input type="text" placeholder="Insira seu endereço" required/>
             </InputFormulario>
             <InputFormulario>
-                <label>Número</label>
-                <input type="text" placeholder="Insira o número da sua residência"/>
+                <label>Número<span className="required">*</span></label>
+                <input type="text" placeholder="Insira o número da sua residência" required/>
             </InputFormulario>
-            <InputFormulario notRequired="true">
+            <InputFormulario>
                 <label>Complemento</label>
                 <input type="text" placeholder="Insira um complemento se achar necessário"/>
             </InputFormulario>

@@ -1,8 +1,9 @@
 .menu {
-    background-color: rebeccapurple;
+    background-color: rgb(228, 230, 231);
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    min-width: 270px;
 }
 .menu .navegacao .lista-navegacao, .menu .icons {
     list-style: none;
