@@ -15,21 +15,21 @@ export default () => (
             <FieldsetForm tituloInstrucao="Email" instrucao="Você pode alterar seu email">
                 <InputFormulario>
                     <label>Email<span className="required">*</span></label>
-                    <input type="email" placeholder="..." required/>
+                    <input type="email" placeholder="email@exemplo.com" required/>
                 </InputFormulario>
             </FieldsetForm>
             <FieldsetForm tituloInstrucao="Instruções" instrucao="Preencha os seus dados de perfil. Sempre mantenha seu telefone atualizado">
                 <InputFormulario>
                     <label>Nome<span className="required">*</span></label>
-                    <input type="text" placeholder="..." required/>
+                    <input type="text" placeholder="Digite seu nome" required/>
                 </InputFormulario>
                 <InputFormulario>
                     <label>Sobrenome<span className="required">*</span></label>
-                    <input type="text" placeholder="..." required/>
+                    <input type="text" placeholder="Digite seu sobrenome" required/>
                 </InputFormulario>
                 <InputFormulario>
                     <label>Telefone<span className="required">*</span></label>
-                    <input type="text" placeholder="..." required/>
+                    <input type="text" placeholder="(00) 00000-0000" required/>
                 </InputFormulario>
             </FieldsetForm>
             <FieldsetForm tituloInstrucao="Links pessoais" instrucao="Compartilhe seu perfil de outras plataformas aqui">
