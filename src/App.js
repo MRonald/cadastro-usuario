@@ -1,8 +1,12 @@
-import Localizacao from './Pages/Localizacao';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
 
 function App() {
   return (
-    <Localizacao></Localizacao>
+   <BrowserRouter>
+      <Routes/>
+    </BrowserRouter>
   );
 }
 

@@ -3,6 +3,6 @@ h1 {
     text-transform: uppercase;
     font-size: 0.9rem;
     color: rgba(0, 0, 0, .5);
-    margin: 2.5rem auto 1.2rem auto;
+    margin: 2.5rem auto -3rem auto;
     min-width: 270px;
 }

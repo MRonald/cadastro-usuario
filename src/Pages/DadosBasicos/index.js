@@ -1,0 +1,52 @@
+import React from 'react';
+import FieldsetForm from '../../components/FieldsetForm';
+import InputFormulario from '../../components/InputFormulario';
+import Button from '../../components/Button';
+import PageDefault from '../../components/PageDefault';
+
+export default () => (
+    <PageDefault>
+        <form>
+            <FieldsetForm tituloInstrucao="Foto de perfil" instrucao="Adicione uma foto ao seu perfil">
+                <InputFormulario>
+                    <input type="file" placeholder="Seu arquivo" required/>
+                </InputFormulario>
+            </FieldsetForm>
+            <FieldsetForm tituloInstrucao="Email" instrucao="Você pode alterar seu email">
+                <InputFormulario>
+                    <label>Email<span className="required">*</span></label>
+                    <input type="email" placeholder="..." required/>
+                </InputFormulario>
+            </FieldsetForm>
+            <FieldsetForm tituloInstrucao="Instruções" instrucao="Preencha os seus dados de perfil. Sempre mantenha seu telefone atualizado">
+                <InputFormulario>
+                    <label>Nome<span className="required">*</span></label>
+                    <input type="text" placeholder="..." required/>
+                </InputFormulario>
+                <InputFormulario>
+                    <label>Sobrenome<span className="required">*</span></label>
+                    <input type="text" placeholder="..." required/>
+                </InputFormulario>
+                <InputFormulario>
+                    <label>Telefone<span className="required">*</span></label>
+                    <input type="text" placeholder="..." required/>
+                </InputFormulario>
+            </FieldsetForm>
+            <FieldsetForm tituloInstrucao="Links pessoais" instrucao="Compartilhe seu perfil de outras plataformas aqui">
+                <InputFormulario>
+                    <label>Github<span className="required">*</span></label>
+                    <input type="text" placeholder="https://www.github.com/abcdefghi" required/>
+                </InputFormulario>
+                <InputFormulario>
+                    <label>Behance<span className="required">*</span></label>
+                    <input type="text" placeholder="https://www.behance.net/abcdefghi" required/>
+                </InputFormulario>
+                <InputFormulario>
+                    <label>Linkedin<span className="required">*</span></label>
+                    <input type="text" placeholder="https://www.linkedin.com/in/abcdefghi" required/>
+                </InputFormulario>
+            </FieldsetForm>
+            <Button valueButton="Enviar"/>
+        </form>
+    </PageDefault>
+);

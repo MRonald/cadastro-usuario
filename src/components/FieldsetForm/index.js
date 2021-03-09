@@ -1,19 +1,16 @@
-import './Formulario.css';
+import './FieldsetForm.css';
 import React from 'react';
 
 export default (props) => (
     <>
-    <div className="container-form">
+    <div className="container-fieldset">
         <div className="instrucoes">
             <h2>{props.tituloInstrucao}</h2>
             <p>{props.instrucao}</p>
         </div>
-        <form className="form">
+        <form className="inputs">
             {props.children}
         </form>
-    </div>
-    <div className="container-button">
-        <input type="submit" value={props.nameButton}/>
     </div>
     </>
 );
