@@ -9,7 +9,7 @@ export default () => (
     <div className="menu">
         <nav className="navegacao">
             <ul className="lista-navegacao">
-                <li className="circleItem"><img src={logoFake}/></li>
+                <a href="/" id="link-logo-fake"><li className="circleItem"><img src={logoFake}/></li></a>
                 <li><a href="#">Explorar</a></li>
                 <li><a href="#">Inscrições</a></li>
             </ul>

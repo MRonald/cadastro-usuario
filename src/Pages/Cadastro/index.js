@@ -1,3 +1,4 @@
+import './Cadastro.css';
 import React from 'react';
 import FormLoginCadastro from '../../components/FormLoginCadastro';
 import InputFormulario from '../../components/InputFormulario';
