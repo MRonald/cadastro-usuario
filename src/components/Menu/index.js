@@ -1,3 +1,7 @@
+import user from '../../assets/imgs/user-circle-solid.svg';
+import logoFake from '../../assets/imgs/globe-solid.svg';
+import bell from '../../assets/imgs/bell-solid.svg';
+
 import React from 'react';
 import './Menu.css';
 
@@ -5,15 +9,15 @@ export default () => (
     <div className="menu">
         <nav className="navegacao">
             <ul className="lista-navegacao">
-                <li className="circleItem"></li>
-                <li>Explorar</li>
-                <li>Inscrições</li>
+                <li className="circleItem"><img src={logoFake}/></li>
+                <li><a href="#">Explorar</a></li>
+                <li><a href="#">Inscrições</a></li>
             </ul>
         </nav>
         <ul className="icons">
-            <li className="circleItem"></li>
+            <li className="circleItem"><img src={bell}/></li>
             <label for="check">
-                <li className="circleItem" id="icone-usuario"></li>
+                <li className="circleItem" id="icone-usuario"><img src={user}/></li>
             </label>
         </ul>
         <input type="checkbox" id="check"/>

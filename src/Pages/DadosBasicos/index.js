@@ -1,3 +1,5 @@
+import user from '../../assets/imgs/user-circle-solid.svg';
+
 import './DadosBasicos.css';
 import React from 'react';
 import FieldsetForm from '../../components/FieldsetForm';
@@ -10,7 +12,7 @@ export default () => (
         <form>
             <FieldsetForm tituloInstrucao="Foto de perfil" instrucao="Adicione uma foto ao seu perfil">
                 <InputFormulario>
-                    <div id="preview"></div>
+                    <div id="preview"><img src={user}/></div>
                     <label for="foto">Carregar Foto</label>
                     <input type="file" id="foto" required/>
                 </InputFormulario>

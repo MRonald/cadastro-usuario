@@ -5,7 +5,7 @@
 .container-input label {
     margin: 2% 0px;
 }
-.container-input input {
+.container-input input:not(input[type="button"]) {
     width: 92%;
     font-size: 1rem;
     padding: 0.7rem 3.2%;
