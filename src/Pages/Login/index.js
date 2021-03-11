@@ -1,4 +1,3 @@
-import './Login.css';
 import React from 'react';
 import PageDefault from '../../components/PageDefault';
 import FormLoginCadastro from '../../components/FormLoginCadastro';
