@@ -59,7 +59,7 @@ input[type="checkbox"]:checked ~ .menu-lateral {
 .menu-lateral {
     position: absolute;
     right: 10px;
-    top: 74px;
+    top: 90px;
     width: 200px;
     height: 300px;
     padding: 5px;
