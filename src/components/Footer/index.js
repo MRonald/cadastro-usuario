@@ -46,7 +46,7 @@ const FooterWrapper = styled.footer`
 export default function Footer() {
     return (
         <FooterWrapper>
-            <ul className="lista-icones">
+            <ul>
                 <li>
                     <img src={search}/>
                     <span>Explorar</span>

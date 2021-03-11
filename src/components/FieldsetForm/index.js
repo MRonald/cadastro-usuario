@@ -1,4 +1,3 @@
-//import './FieldsetForm.css';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -54,7 +53,7 @@ const FieldsetFormWrapper = styled.fieldset`
 
 // Exportando componente
 export default (props) => (
-    <FieldsetFormWrapper className="container-fieldset">
+    <FieldsetFormWrapper>
         <div id="instrucoes">
             <h2>{props.tituloInstrucao}</h2>
             <p>{props.instrucao}</p>
