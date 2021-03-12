@@ -45,54 +45,56 @@ const DadosBasicosWrapper = styled.div`
 `;
 
 // Exportando componente
-export default () => (
-    <DadosBasicosWrapper>
-        <PageDefault>
-            <form>
-                <FieldsetForm tituloInstrucao="Foto de perfil" instrucao="Adicione uma foto ao seu perfil">
-                    <InputFormulario>
-                        <div id="preview"><img src={user} id="img-preview"/></div>
-                        <label for="foto" id="label-foto">Carregar Foto</label>
-                        <input type="file" id="foto" required/>
-                    </InputFormulario>
-                </FieldsetForm>
-                <FieldsetForm tituloInstrucao="Email" instrucao="Você pode alterar seu email">
-                    <InputFormulario>
-                        <label className="required">Email</label>
-                        <input type="email" placeholder="email@exemplo.com" required/>
-                        <Button valueButton="Atualizar Email" type="button" color="rgb(41, 128, 185)" align="left"/>
-                    </InputFormulario>
-                </FieldsetForm>
-                <FieldsetForm tituloInstrucao="Instruções" instrucao="Preencha os seus dados de perfil. Sempre mantenha seu telefone atualizado">
-                    <InputFormulario>
-                        <label className="required">Nome</label>
-                        <input type="text" placeholder="Digite seu nome" required/>
-                    </InputFormulario>
-                    <InputFormulario>
-                        <label className="required">Sobrenome</label>
-                        <input type="text" placeholder="Digite seu sobrenome" required/>
-                    </InputFormulario>
-                    <InputFormulario>
-                        <label className="required">Telefone</label>
-                        <input type="text" placeholder="(00) 00000-0000" required/>
-                    </InputFormulario>
-                </FieldsetForm>
-                <FieldsetForm tituloInstrucao="Links pessoais" instrucao="Compartilhe seu perfil de outras plataformas aqui">
-                    <InputFormulario>
-                        <label className="required">Github</label>
-                        <input type="text" placeholder="https://www.github.com/abcdefghi" required/>
-                    </InputFormulario>
-                    <InputFormulario>
-                        <label className="required">Behance</label>
-                        <input type="text" placeholder="https://www.behance.net/abcdefghi" required/>
-                    </InputFormulario>
-                    <InputFormulario>
-                        <label className="required">Linkedin</label>
-                        <input type="text" placeholder="https://www.linkedin.com/in/abcdefghi" required/>
-                    </InputFormulario>
-                </FieldsetForm>
-                <Button valueButton="Enviar" type="submit"/>
-            </form>
-        </PageDefault>
-    </DadosBasicosWrapper>
-);
+export default function DadosBasicos() {
+    return (
+        <DadosBasicosWrapper>
+            <PageDefault>
+                <form>
+                    <FieldsetForm tituloInstrucao="Foto de perfil" instrucao="Adicione uma foto ao seu perfil">
+                        <InputFormulario>
+                            <div id="preview"><img src={user} id="img-preview" alt="icone usuario"/></div>
+                            <label for="foto" id="label-foto">Carregar Foto</label>
+                            <input type="file" id="foto" required/>
+                        </InputFormulario>
+                    </FieldsetForm>
+                    <FieldsetForm tituloInstrucao="Email" instrucao="Você pode alterar seu email">
+                        <InputFormulario>
+                            <label className="required">Email</label>
+                            <input type="email" placeholder="email@exemplo.com" required/>
+                            <Button valueButton="Atualizar Email" type="button" color="rgb(41, 128, 185)" align="left"/>
+                        </InputFormulario>
+                    </FieldsetForm>
+                    <FieldsetForm tituloInstrucao="Instruções" instrucao="Preencha os seus dados de perfil. Sempre mantenha seu telefone atualizado">
+                        <InputFormulario>
+                            <label className="required">Nome</label>
+                            <input type="text" placeholder="Digite seu nome" required/>
+                        </InputFormulario>
+                        <InputFormulario>
+                            <label className="required">Sobrenome</label>
+                            <input type="text" placeholder="Digite seu sobrenome" required/>
+                        </InputFormulario>
+                        <InputFormulario>
+                            <label className="required">Telefone</label>
+                            <input type="text" placeholder="(00) 00000-0000" required/>
+                        </InputFormulario>
+                    </FieldsetForm>
+                    <FieldsetForm tituloInstrucao="Links pessoais" instrucao="Compartilhe seu perfil de outras plataformas aqui">
+                        <InputFormulario>
+                            <label className="required">Github</label>
+                            <input type="text" placeholder="https://www.github.com/abcdefghi" required/>
+                        </InputFormulario>
+                        <InputFormulario>
+                            <label className="required">Behance</label>
+                            <input type="text" placeholder="https://www.behance.net/abcdefghi" required/>
+                        </InputFormulario>
+                        <InputFormulario>
+                            <label className="required">Linkedin</label>
+                            <input type="text" placeholder="https://www.linkedin.com/in/abcdefghi" required/>
+                        </InputFormulario>
+                    </FieldsetForm>
+                    <Button valueButton="Enviar" type="submit"/>
+                </form>
+            </PageDefault>
+        </DadosBasicosWrapper>
+    );
+}

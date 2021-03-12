@@ -48,15 +48,15 @@ export default function Footer() {
         <FooterWrapper>
             <ul>
                 <li>
-                    <img src={search}/>
+                    <img src={search} alt="lupa search"/>
                     <span>Explorar</span>
                 </li>
                 <li>
-                    <img src={suitcase}/>
+                    <img src={suitcase} alt="maleta"/>
                     <span>Inscrições</span>
                 </li>
                 <li>
-                    <img src={bell}/>
+                    <img src={bell} alt="sino notificação"/>
                     <span>Notificações</span>
                 </li>
             </ul>

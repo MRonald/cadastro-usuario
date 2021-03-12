@@ -52,14 +52,16 @@ const FieldsetFormWrapper = styled.fieldset`
 `;
 
 // Exportando componente
-export default (props) => (
-    <FieldsetFormWrapper>
-        <div id="instrucoes">
-            <h2>{props.tituloInstrucao}</h2>
-            <p>{props.instrucao}</p>
-        </div>
-        <form>
-            {props.children}
-        </form>
-    </FieldsetFormWrapper>
-);
+export default function FieldsetForm(props) {
+    return (
+        <FieldsetFormWrapper>
+            <div id="instrucoes">
+                <h2>{props.tituloInstrucao}</h2>
+                <p>{props.instrucao}</p>
+            </div>
+            <form>
+                {props.children}
+            </form>
+        </FieldsetFormWrapper>
+    );
+}

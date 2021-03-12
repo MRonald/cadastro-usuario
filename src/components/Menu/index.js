@@ -33,7 +33,7 @@ const MenuWrapper = styled.div`
                 padding: 15px 5px;
                 font-size: 0.8rem;
                 font-weight: 600;
-                transition: all 0.5s;
+                transition: color 0.5s;
 
                 &:hover {
                     color: #C93C5A;
@@ -116,29 +116,30 @@ const MenuWrapper = styled.div`
 `;
 
 // Exportando componente
-export default () => (
-    <MenuWrapper>
-        <nav id="navegacao">
-            <ul>
-                <a href="/" id="link-logo-fake"><li className="circleItem"><img src={logoFake}/></li></a>
-                <li><a href="#">Explorar</a></li>
-                <li><a href="#">Inscrições</a></li>
-            </ul>
-        </nav>
-        <nav id="icons">
-            <li className="circleItem"><img src={bell}/></li>
-            <label for="check">
-                <li className="circleItem" id="icone-usuario"><img src={user}/></li>
-            </label>
-        </nav>
-        <input type="checkbox" id="check"/>
-        <div id="menu-lateral">
-            <a href="/">Login</a>
-            <a href="/cadastro">Cadastro</a>
-            <a href="/dadosbasicos">Dados Básicos</a>
-            <a href="/localizacao">Localizacao</a>
-        </div>
-    </MenuWrapper>
-);
-
+export default function Menu() {
+    return (
+        <MenuWrapper>
+            <nav id="navegacao">
+                <ul>
+                    <a href="/" id="link-logo-fake"><li className="circleItem"><img src={logoFake} alt="logo fake"/></li></a>
+                    <li><a href="/">Explorar</a></li>
+                    <li><a href="/">Inscrições</a></li>
+                </ul>
+            </nav>
+            <nav id="icons">
+                <li className="circleItem"><img src={bell} alt="sino notificação"/></li>
+                <label htmlFor="check">
+                    <li className="circleItem" id="icone-usuario"><img src={user} alt="icone usuario"/></li>
+                </label>
+            </nav>
+            <input type="checkbox" id="check"/>
+            <div id="menu-lateral">
+                <a href="./">Login</a>
+                <a href="/cadastro">Cadastro</a>
+                <a href="/dadosbasicos">Dados Básicos</a>
+                <a href="/localizacao">Localizacao</a>
+            </div>
+        </MenuWrapper>
+    );
+}
     

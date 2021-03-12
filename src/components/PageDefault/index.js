@@ -1,14 +1,10 @@
 import React from 'react';
-import styled, { createGlobalStyle, css } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Menu from '../Menu';
 import Footer from '../Footer';
 
 // Estilizando componente
-const FontSite = css`
-    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-`;
 const GlobalStyle = createGlobalStyle`
-    ${FontSite}
     * {
         margin: 0;
         padding: 0;
@@ -22,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         background-color: rgb(242, 242, 242);
-        font-family: 'Lato', sans-serif;
         box-sizing: border-box;
     }
 `;

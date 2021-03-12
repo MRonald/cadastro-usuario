@@ -24,8 +24,10 @@ const ButtonWrapper = styled.div`
 `;
 
 // Exportando componente
-export default (props) => (
-    <ButtonWrapper style={{textAlign: props.align || 'center'}}>
-        <input type={props.type} value={props.valueButton || 'Enviar'} style={{backgroundColor: props.color || 'rgb(201, 59, 89)'}}/>
-    </ButtonWrapper>
-);
+export default function Button(props) {
+    return (
+        <ButtonWrapper style={{textAlign: props.align || 'center'}}>
+            <input type={props.type} value={props.valueButton || 'Enviar'} style={{backgroundColor: props.color || 'rgb(201, 59, 89)'}}/>
+        </ButtonWrapper>
+    );
+}
